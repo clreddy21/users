@@ -1,0 +1,14 @@
+.row.text-center
+  .col-md-4
+  .col-md-4
+    %h1
+      List of Users
+
+    .column_name
+      = select_tag :column_name, options_for_select(@columns), id: 'column_name'
+  .col-md-4
+
+
+
+
+= render 'users_table_partial'
